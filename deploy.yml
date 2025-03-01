@@ -1,15 +1,14 @@
 ---
 - name: Pull Docker Image from Docker Hub
   hosts: localhost
-  remote_user: prakhar
+  remote_user: prakhar-sharma
   become: false
   tasks:
     - name: Pull Docker Image
       docker_image:
-        name: "PrakharSharma/calculator"
+        name: "prakharsharma404/calculator"
         source: pull
       register: docker_pull_result
-      become: true
 
     - name: Display Docker Pull Result
       debug:
@@ -21,5 +20,5 @@
         state: started
 
     - name: Run Docker container
-      shell: docker run -it -d --name calculator PrakharSharma/calculator
+      shell: docker run -it -d --name calculator prakharsharma404/calculator
       
