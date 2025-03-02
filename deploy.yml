@@ -19,6 +19,9 @@
         name: docker
         state: started
 
+    - name: Remove existing container
+      shell: docker rm -f calculator || true
+
     - name: Run Docker container
       shell: docker run -it -d --name calculator prakharsharma404/calculator
       
