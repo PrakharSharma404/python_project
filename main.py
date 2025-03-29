@@ -1,4 +1,4 @@
-#hello gauan lala
+#hello 
 import math
 
 def square_root(x):
