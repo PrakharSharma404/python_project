@@ -1,5 +1,5 @@
 #hello
-#hello again
+
 import math
 
 def square_root(x):
