@@ -7,7 +7,7 @@ def square_root(x):
 
 def factorial(x):
     if x < 0:
-        return "Factorial is not defined for negative numbers."
+        return "Factorial is not defined for negative numbers., ok?"
     return math.factorial(x)
 
 def natural_log(x):
