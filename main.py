@@ -12,7 +12,7 @@ def factorial(x):
 
 def natural_log(x):
     if x <= 0:
-        return "Natural logarithm is not defined for zero or negative numbers."
+        return "Natural logarithm is not defined for zero or negative numbers.ok?"
     return math.log(x)
 
 def power(base, exponent):
