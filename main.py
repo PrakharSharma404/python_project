@@ -2,17 +2,17 @@ import math
 
 def square_root(x):
     if x < 0:
-        return "Square root of a negative number is not defined in real numbers, ok?"
+        return "Square root of a negative number is not defined in real numbers"
     return math.sqrt(x)
 
 def factorial(x):
     if x < 0:
-        return "Factorial is not defined for negative numbers., ok?"
+        return "Factorial is not defined for negative numbers."
     return math.factorial(x)
 
 def natural_log(x):
     if x <= 0:
-        return "Natural logarithm is not defined for zero or negative numbers.ok?"
+        return "Natural logarithm is not defined for zero or negative numbers."
     return math.log(x)
 
 def power(base, exponent):
