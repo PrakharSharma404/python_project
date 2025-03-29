@@ -2,7 +2,7 @@ import math
 
 def square_root(x):
     if x < 0:
-        return "Square root of a negative number is not defined in real numbers"
+        return "Square root of a negative number is not defined in real numbers."
     return math.sqrt(x)
 
 def factorial(x):
@@ -59,3 +59,4 @@ def calculator():
 
 if __name__ == "__main__":
     calculator()
+
