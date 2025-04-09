@@ -15,7 +15,7 @@ class TestCalculator(unittest.TestCase):
     def test_square_root(self):
         self.assertEqual(square_root(4), 2)
         self.assertEqual(square_root(0), 0)
-        self.assertEqual(square_root(-1), "Square root of a negative number is not defined in real numbers")
+        self.assertEqual(square_root(-1), "Square root of a negative number is not defined in real numbers.")
 
     def test_factorial(self):
         self.assertEqual(factorial(5), 120)
