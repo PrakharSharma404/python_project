@@ -4,6 +4,14 @@ import math
 
 class TestCalculator(unittest.TestCase):
 
+    @classmethod
+    def setUpClass(cls):
+        print("🔍 Running unit tests for the Scientific Calculator...")
+
+    @classmethod
+    def tearDownClass(cls):
+        print("✅ All test cases ran successfully!")
+
     def test_square_root(self):
         self.assertEqual(square_root(4), 2)
         self.assertEqual(square_root(0), 0)
@@ -26,4 +34,5 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(power(2, -2), 0.25)
 
 if __name__ == "__main__":
+    print("🧪 Starting test runner...")
     unittest.main()
