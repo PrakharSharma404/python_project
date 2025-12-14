@@ -4,6 +4,10 @@
   remote_user: prakhar-sharma
   become: false
   tasks:
+    - name: Install python docker library
+      pip:
+        name: docker
+
     - name: Pull Docker Image
       docker_image:
         name: "prakharsharma404/calculator"
