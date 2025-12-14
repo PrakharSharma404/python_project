@@ -1,0 +1,31 @@
+---
+- name: Pull Docker Image from Docker Hub
+  hosts: localhost
+  remote_user: prakhar-sharma
+  become: false
+  tasks:
+    - name: Pull Docker Image
+      docker_image:
+        name: "prakharsharma404/calculator"
+        source: pull
+      register: docker_pull_result
+
+    - name: Display Docker Pull Result
+      debug:
+        var: docker_pull_result
+
+    - name: Start Docker service
+      service:
+        name: docker
+        state: started
+
+    - name: Run Docker container
+      community.docker.docker_container:
+        name: calculator
+        image: prakharsharma404/calculator
+        state: started
+        recreate: true
+        interactive: true
+        tty: true
+        detach: true
+      
